@@ -8,7 +8,7 @@ export const Task = () => {
     <div className="task">
       <AddTask/>
       <TaskList/>
-      <doneTask/>
+      <DoneList/>
   
       
     </div>

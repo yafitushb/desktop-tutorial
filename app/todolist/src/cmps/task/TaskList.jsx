@@ -13,7 +13,7 @@ export const TaskList = () => {
             <div className="control">
                 <input
                     type={"text"}
-                    onchange={(ev) => { 
+                    onChange={(ev) => { 
                         setFilter(ev.target.value); 
                     }}
                     value={filter ? filter : ''} 

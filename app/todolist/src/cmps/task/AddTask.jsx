@@ -1,10 +1,13 @@
 import React from 'react';
-import  taskService  from '../../services/taskService';
+import { taskService } from '../../services/taskService';
 import { useForm } from '../../services/generalService/customHooks';
+import { useState } from 'react';
 
 export const AddTask = () => {
-    const [ taskDetails, handleChangeTaskDetails, setTaskDetails ] = useForm(taskService.getEmptyTask()
+    const [ taskDetails, handleChangeTaskDetails, setTaskDetails ] = useForm(
+        taskService.getEmptyTask()
     );
+
     const addTask = () => {
         taskService.add(taskDetails)
     };
@@ -19,7 +22,7 @@ export const AddTask = () => {
                         type="date" 
                         name="time"
                         value={taskDetails.time || ''}
-                        onChange={handleChangeCustomerDetails}
+                        onChange={handleChangeTaskDetails}
                         placeholder="Title"
                     />
                     <select name="priority" id="priority">
@@ -32,7 +35,7 @@ export const AddTask = () => {
                         type="text" 
                         name="desc"
                         value={taskDetails.desc || ''}
-                        onChange={handleChangeCustomerDetails}
+                        onChange={handleChangeTaskDetails}
                         placeholder="Please insert Description"
                     />
                     <button 

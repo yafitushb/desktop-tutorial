@@ -2,6 +2,7 @@ import { Task } from "../data/dummyData";
 import { storageService } from "./generalService/storageService"
 
 export const taskService = {
+    getEmptyTask,
     query,
     add,
     getById,
@@ -11,13 +12,7 @@ export const taskService = {
 
 const entityType = "task";
 
-// _id : "t0001",
-// title: "Plan tactic to players",
-// desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae qui aperiam maxime hic fugiat a magnam, corrupti neque iusto tenetur nesciunt impedit sit nisi quam reprehenderit cum distinctio optio Dolor",
-// time : new Date(),
-// priority: 3,
-// done : false
-function getEmptyTask (){
+function getEmptyTask( ) {
     return {
         title: '',
         desc: '',
@@ -32,8 +27,8 @@ function query(filter = null) {
     return tasks
 }
 
-function add(newTask) {
-    const newTask =  storageService.post(entityType,newTask);
+function add(task) {
+    const newTask =  storageService.post(entityType,task);
     return newTask;
 }
 
