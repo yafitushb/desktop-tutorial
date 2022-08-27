@@ -1,0 +1,14 @@
+.addTask{
+    border: 2px solid var($clr1)
+    padding 8px;
+    form{
+        display: flex;
+        flex-direction: column;
+        input{
+            margin: 32px 0;
+        }
+        .descInput{
+            padding: 4px 4px 160px;
+        }
+     }
+}

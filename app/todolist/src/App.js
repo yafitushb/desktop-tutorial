@@ -1,17 +1,37 @@
+import { useEffect } from "react";
+import { dataService } from "./services/generalService/dataService";
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { AppHeader } from "./cmps/layout/AppHeader"
+import { AppFooter } from "./cmps/layout/AppFooter"
+import { routes } from "./routes.js";
 
-import './App.css';
 
-function App() {
+
+export const App = () => {
+  useEffect(() => {
+    dataService.removeData()
+    dataService.initData();
+  }, [])
+
+  //www.firstProject.com/ => Task
+  //www.firstProject.com/Contact => Contact
   return (
     <div className="App">
-      <h1> My First Project</h1> 
-      <h4> My project</h4>
+      <Router>
+        <header>
+          <AppHeader />
+        </header>
+        <main>
+          <Switch>
+            {
+              routes.map(route => <Route key={route.path} component={route.component} path={route.path} />)
+            }
+          </Switch>
+        </main>
+        <footer>
+          <AppFooter />
+        </footer>
+      </Router>
     </div>
- 
   );
 }
-
-export default App;
-
-
-
