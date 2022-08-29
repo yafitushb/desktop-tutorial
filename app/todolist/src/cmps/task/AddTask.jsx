@@ -15,7 +15,7 @@ export const AddTask = () => {
     //form
     return (
     <div className="addTask">
-        <h4>Add Task</h4>
+        <h4>Create New Task</h4>
         <div className="formTask">
             <form>
                     <input 
@@ -26,17 +26,17 @@ export const AddTask = () => {
                         placeholder="Title"
                     />
                     <select name="priority" id="priority">
-                        <option value="high">High</option>
-                        <option value="medium">Medium</option>
-                        <option value="Low">Low</option>
-                    </select>
+                        <option value="high">To Do</option>
+                        <option value="medium">In Progress</option>
+                        <option value="Low">Completed</option>
+                    </select>  
                     <input 
                     className='descInput'
                         type="text" 
                         name="desc"
                         value={taskDetails.desc || ''}
                         onChange={handleChangeTaskDetails}
-                        placeholder="Please insert Description"
+                        placeholder="Description"
                     />
                     <button 
                         className="sendTask" 
@@ -45,10 +45,11 @@ export const AddTask = () => {
                             ev.preventDefault();
                         }} 
                     >
-                        שלח
+                        Create Task
                     </button>
                 </form>
             </div>
         </div>
   );
 };
+
