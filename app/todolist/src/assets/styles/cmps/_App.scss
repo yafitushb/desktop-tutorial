@@ -54,28 +54,28 @@ select option{
 }
 
 
-
-
 // TASK-LIST-SCROLLER
-/*  Scroll Helper   */
+// Scroll Helper   
 ::-webkit-scrollbar {
     height: 0.5rem;
     width: 0.5rem;
 }
   
-  /* Track */
+  // Track 
 ::-webkit-scrollbar-track {
     background: rgba(173, 173, 173, 0.692);
     border-radius: 0.25rem;
 
 }
 
-/* Handle */
+// Handle 
 ::-webkit-scrollbar-thumb {
     background: rgba(102, 102, 102, 0.356);
     border-radius: 0.5rem;
 }
 
-/* Handle on hover */
+// Handle on hover 
 ::-webkit-scrollbar-thumb:hover {
 }
+
+

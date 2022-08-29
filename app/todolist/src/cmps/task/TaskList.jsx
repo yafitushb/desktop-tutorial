@@ -17,6 +17,7 @@ export const TaskList = () => {
                         setFilter(ev.target.value); 
                     }}
                     value={filter ? filter : ''} 
+                    
                 />
             </div>
             <div className="list">

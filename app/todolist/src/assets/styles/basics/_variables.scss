@@ -1,0 +1,600 @@
+/* Variables*/
+
+:root {
+    --black: rgba(0, 0, 0,1);
+    --eerie-black:rgba(30, 30, 30, 1);
+    --steel-blue: rgba(1, 127, 182, 1);
+    --ocean-green: rgba(52, 167, 112, 1);
+    --grave1: rgba(74, 74, 74, 1);
+    --abbey-2: rgba(78, 78, 78, 0.902);
+    --abbey: rgba(78, 78, 78, 1);
+    --true-v: rgba(133, 118, 240, 1);
+    --nobel: rgba(180, 180, 180, 1);
+    --periwinkle: rgba(202, 199, 255, 1);
+    --mabel: rgba(218, 240, 255, 1);
+    --white-ice: rgba(218, 240, 255, 1);
+    --alto: rgba(222, 222, 222, 1);
+    --tahiti-gold: rgba(225, 129, 9, 1);
+    --wild-sand: rgba(244, 244, 244, 1);
+    --ogre-odor: rgba(247, 85, 63, 1);
+    --baby-powder: rgba(252, 252, 252);
+    --radical-red: rgba(255, 49, 111, 1);
+    --sasquatch-socks: rgba(255, 69, 125, 1);
+    --strawberry: rgba(255, 77, 138, 1);
+    --strawberry-2: rgba(255, 96, 144, 1);
+    --wild-watermelon: rgba(255, 107, 152, 1);
+    --tickle-me-pink: rgba(255, 127, 167, 1);
+    --carnation-pink: rgba(255, 168, 195, 1);
+    --pastel-pink: rgba(255, 211, 225, 1);
+    --fair-pink: rgba(255, 235, 235, 1);
+    --peach-cream: rgba(255, 239, 223, 1);
+    --white: rgba(255, 255, 255, 1);
+
+    --font-size-s: 12px;
+    --font-size-m: 14px;
+    --font-size-l: 16px;
+    --font-size-xl: 18.5px;
+    --font-size-xxl: 20px;
+    --font-size-xxxl: 24px;
+    --font-size-xxxxl: 34px;
+
+    --font-family-inter: "Inter";
+    --font-family-poppins: "Poppoins";
+    --font-family-roboto: "Roboto";
+    --font-family-work_sans: "Work Sans";
+
+    /* Classes*/
+
+    .roboto-bold-baby-powder-16px {
+        color: var(--baby-powder);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-l);
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    
+    .roboto-normal-baby-powder-14-8px {
+        color: var(--baby-powder);
+        font-family: var(--font-family-roboto);
+        font-size: 14.774998664855957px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-semi-bold-tahiti-gold-12px {
+        color: var(--tahiti-gold);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-s);
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .roboto-normal-abbey-13-7x {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: 13.654911994934082px;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .borer-0-6px-alto {
+        border-width: 0.6px;
+        border-style: solid;
+        border-color: var(--alto);
+
+    }
+
+    .roboto-bold-nobel-14px {
+        color: var(--nobel);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-m);
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .roboto-normal-abbey-16px {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-l);
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-normal-gravel-23-8x {
+        color: var(--gravel);
+        font-family: var(--font-family-roboto);
+        font-size: 23.845069885253906px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .border-px-ogre-odor{
+        border-width: 2px;
+        border-style: solid;
+        border-color: var(--ogre-odor);
+    }
+
+    .roboto-bold-ocean-green-14px {
+        color: var(--ocean-green);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-m);
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .roboto-normal-black-14-8px {
+        color: var(--black);
+        font-family: var(--font-family-roboto);
+        font-size: 14.774998664855957px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-normal-abbey-14-8px {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: 14.774998664855957px;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+
+    .roboto-vold-abbey-16px {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-l);
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .roboto-medium-nobel-16px {
+        color: var(--nobel);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-l);
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .roboto-medium-black-19px {
+        color: var(--black);
+        font-family: var(--font-family-roboto);
+        font-size: 19px;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .roboto-normal-black-24px {
+        color: var(--black);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxl);
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .border-1px-nobel {
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--nobel);
+    }
+
+    .border-1-5px-ogre-odor {
+        border-width: 1.5px;
+        border-style: solid;
+        border-color: var(--ogre-odor);
+    }
+
+    .roboto-semi-bold-baby-powder-10px {
+        color: var(--baby-powder);
+        font-family: var(--font-family-roboto);
+        font-size: 10px;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .border-0-5px-steel-blue {
+        border-width: 0.5px;
+        border-style: solid;
+        border-color: var(--steel-blue);
+    }
+
+    .roboto-bold-abbey-14px {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-m);
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .roboto-medium-abbey-17px {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: 17px;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .border-0-5px-tahiti-gold {
+        border-width: 0.5px;
+        border-style: solid;
+        border-color: var(--tahiti-gold);
+    }
+
+    .roboto-bold-tahiti-gold-14px {
+        color: var(--tahiti-gold);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-m);
+    }
+
+    .roboto-medium-abbey-20px {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxl);
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .poppins-normal-black-18px {
+        color: var(--black);
+        font-family: var(--font-family-poppins);
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-medium-black-18px {
+        color: var(--black);
+        font-family: var(--font-family-roboto);
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .border-1px-white-ice {
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--white-ice);
+    }
+
+    .border-0-6px-nobel {
+        border-width: 0.6px;
+        border-style: solid;
+        border-color: var(--nobel);
+    }
+
+    .roboto-bold-baby-powder-14px {
+        color: var(--baby-powder);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-m);
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .roboto-medium-baby-powder-34px {
+        color: var(--baby-powder);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxxxl);
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .roboto-semi-bold-steel-blue-12px {
+        color: var(--steel-blue);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-s);
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .roboto-medium-black-20px {
+        color: var(--black);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxl);
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .roboto-normal-nobel-13px {
+        color: var(--nobel);
+        font-family: var(--font-family-roboto);
+        font-size: 13px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .inter-bold-eerie-black-17-2px {
+        color: var(--eerie-black);
+        font-family: var(--font-family-inter);
+        font-size: 17.172412872314453px;
+        font-family: 700;
+        font-style: normal;
+    }
+
+    .roboto-normal-gravel-18-5px {
+        color: var(--gravel);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xl);
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .border-1-5px-steel-blue {
+        border-width: 1.5px;
+        border-style: solid;
+        border-color: var(--steel-blue);
+    }
+
+    .roboto-normal-gravel-26-5px {
+        color: var(--grave1);
+        font-family: var(--font-family-roboto);
+        font-size: 26.494522094726562px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-semi-bold-baby-powder-160px {
+        color: var(--baby-powder);
+        font-family: var(--font-family-roboto);
+        font-size: 160px;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .roboto-medium-baby-powder-9px {
+        color: var(--baby-powder);
+        font-family: var(--font-family-roboto);
+        font-size: 9x;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .border-0-5px-nobel{
+        border-width: 0.5px;
+        border-style: solid;
+        border-color: var(--nobel);
+    }
+
+    .inter-medium-abbey-14px {
+        color: var(--abbey);
+        font-family: var(--font-family-inter);
+        font-size: var(--font-size-m);
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .roboto-semi-bold-abbey-30px {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: 30px;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .roboto-normal-black-14px {
+        color: var(--black);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-m);
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-medium-abbey-24px {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxxl);
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .border-1-5px-tahiti-gold {
+        border-width: 1.5px;
+        border-style: solid;
+        border-color: var(--tahiti-gold);
+    }
+
+    .roboto-normal-nobel-14px {
+        color: var(--nobel);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-m);
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-normal-black-36px {
+        color: var(--black);
+        font-family: var(--font-family-roboto);
+        font-size: 36px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-normal-white-14-8px {
+        color: var(--white);
+        font-family: var(--font-family-roboto);
+        font-size: 14.774998664855957px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-normal-nobel-16px {
+        color: var(--nobel);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-l);
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-normal-baby-powder-20px {
+        color: var(--baby-powder);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxl);
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-semi-bold-baby-powder-12px {
+        color: var(--baby-powder);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-s);
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .roboto-semi-bold-abbey-34px {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxxxl);
+        font-weight: 600;
+        font-style: normal ;
+    }
+
+    .roboto-semi-bold-abbey-12px {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-s);
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .roboto-semi-bold-steel-blue-14px {
+        color: var(--steel-blue);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-m);
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .roboto-bold-true-v-16px {
+        color: var(--true-v);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-l);
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .border-2px-true-v {
+        border-width: 2px;
+        border-style: solid;
+        border-color: var(--true-v);
+    }
+
+    .roboto-semi-bold-nobel-12px {
+        color: var(--nobel);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-s);
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .roboto-medium-true-v-16px {
+        color: var(--true-v);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-l);
+        font-weight: 500;
+        font-style: normal
+    }
+
+    .roboto-normal-abbey-14x {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-m);
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-normal-baby-powder-8px {
+        color: var(--baby-powder);
+        font-family: var(--font-family-roboto);
+        font-size: 8px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .border-0-5px-ocean-green {
+        border-width: 0.5px;
+        border-style: solid;
+        border-color: var(--ocean-green);
+    }
+
+    .roboto-semi-bold-ogre-odor-12px {
+        color: var(--ogre-odor);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-s);
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .roboto-normal-gravel-31-8px {
+        color: var(--grave1);
+        font-family: var(--font-family-roboto);
+        font-size: 31.793426513671875px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-semi-bold-ocean-green-12px {
+        color: var(--ocean-green);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-s);
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .worksans-medium-baby-powder-10px {
+        color: var(--baby-powder);
+        font-family: var(--font-family-work_sans);
+        font-size: 10px;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .inter-normal-black-36px {
+        color: var(--black);
+        font-family: var(--font-family-inter);
+        font-size: 36px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .worksans-medium-abbey-10px {
+        color: var(--abbey);
+        font-family: var(--font-family-work_sans);
+        font-size: 10px;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .roboto-semi-bold-baby-powder-32px {
+        color: var(--baby-powder);
+        font-family: var(--font-family-roboto);
+        font-size: 32px;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .roboto-normal-abbey-20px {
+        color: var(--abbey);
+        font-family: var(--font-family-roboto);
+        font-size: var(--font-size-xxl);
+        font-weight: 400;
+        font-style: normal;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

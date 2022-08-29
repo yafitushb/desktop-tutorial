@@ -6,11 +6,11 @@ import { DoneList } from '../cmps/task/DoneList'
 export const Task = () => {
   return (
     <div className="task">
+    
       <AddTask/>
       <TaskList/>
       <DoneList/>
   
-      
     </div>
   );
 }

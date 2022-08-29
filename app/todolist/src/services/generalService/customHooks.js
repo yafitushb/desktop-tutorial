@@ -16,7 +16,7 @@ export const useForm = (initialState, cb = () => {}) => {
     
     return [
         fields,
-        function (en) {
+        function (ev) {
             const field = ev.target.name
             const value = (ev.target.type === 'number') ? +eval.target.value : eval.target.value
             setFields(prevFields => ({  ...prevFields, [field]: value }))
