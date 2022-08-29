@@ -2,6 +2,7 @@ import React from 'react';
 import { taskService } from '../../services/taskService';
 import { useForm } from '../../services/generalService/customHooks';
 import { useState } from 'react';
+import { newTaskLabels } from '../../services/newTaskLabels';
 
 export const AddTask = () => {
     const [ taskDetails, handleChangeTaskDetails, setTaskDetails ] = useForm(

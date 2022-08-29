@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { taskService } from '../../services/taskService';
 import { TaskPreview } from './TaskPreview';
+
 export const TaskList = () => {
     const [filter, setFilter] = useState('');
     let tasksFilter = taskService.query();
