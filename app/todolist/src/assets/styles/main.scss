@@ -8,8 +8,9 @@
 @import "basics/reset";
 @import "basics/helpers";
 @import "basics/base";
+@import "basics/variables";  
 
-//Base
+// Base
 @import "basics/layout";
 @import "basics/media";
 
@@ -22,3 +23,5 @@
 @import "cmps/TaskList";
 @import "cmps/AddTask";
 @import "cmps/TaskPreview";
+@import "cmps/newTaskLabels";
+
